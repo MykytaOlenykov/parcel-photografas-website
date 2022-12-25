@@ -1,0 +1,2 @@
+const e=document.querySelector(".open-menu"),t=document.querySelector(".close-menu"),c=document.querySelector(".mobile-menu");function o(){c.classList.toggle("active"),document.body.classList.toggle("lock"),window.matchMedia("(min-width: 768px)").addEventListener("change",(e=>{e.matches&&(c.classList.remove("active"),document.body.classList.remove("lock"))}))}e.addEventListener("click",o),t.addEventListener("click",o);
+//# sourceMappingURL=index.9143042c.js.map
