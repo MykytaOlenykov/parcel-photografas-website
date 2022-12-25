@@ -1,0 +1,2 @@
+var openMenu=document.querySelector(".open-menu"),closeMenu=document.querySelector(".close-menu"),mobileMenu=document.querySelector(".mobile-menu");function toggleMenu(){mobileMenu.classList.toggle("active"),document.body.classList.toggle("lock"),window.matchMedia("(min-width: 768px)").addEventListener("change",(function(e){e.matches&&(mobileMenu.classList.remove("active"),document.body.classList.remove("lock"))}))}openMenu.addEventListener("click",toggleMenu),closeMenu.addEventListener("click",toggleMenu);
+//# sourceMappingURL=index.7d62524b.js.map
