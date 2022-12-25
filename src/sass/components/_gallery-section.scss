@@ -1,0 +1,19 @@
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 16px;
+  background-color: $color-primary;
+
+  @media screen and (min-width: $desktop) {
+    padding: 25px 20px;
+  }
+}
+
+.gallery-container__img {
+  max-width: 342px;
+
+  @media screen and (min-width: $desktop) {
+    max-width: 1280px;
+  }
+}

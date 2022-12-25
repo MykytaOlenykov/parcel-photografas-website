@@ -1,0 +1,82 @@
+.hero-section {
+  position: relative;
+
+  @media screen and (min-width: $desktop) {
+    background-color: $color-primary;
+  }
+}
+
+.hero-section__container {
+  padding-top: 225px;
+  padding-bottom: 126px;
+
+  background-image: url('../images/mobile-images/mobile-hero-img.png');
+  background-size: contain;
+  background-position: 50% 72px;
+  background-repeat: no-repeat;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../images/mobile-images/mobile-hero-img@2x.png');
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 206px;
+    padding-bottom: 131px;
+
+    background-image: url('../images/desktop-images/desktop-hero-img.png');
+    background-size: 620px 593px;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/desktop-images/desktop-hero-img@2x.png');
+    }
+  }
+
+  @media screen and (max-width: calc($desktop - 1px)) {
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+
+      content: '';
+      display: block;
+      height: 100%;
+      width: 100vw;
+
+      background: $hero-gradient;
+    }
+  }
+}
+
+.hero-section__box {
+  position: relative;
+  z-index: 1;
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    width: 620px;
+  }
+}
+
+.hero-section__title {
+  margin-top: 0;
+  margin-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  color: $color-secondary;
+
+  @media screen and (min-width: $desktop) {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.43;
+    letter-spacing: 0.03em;
+  }
+}

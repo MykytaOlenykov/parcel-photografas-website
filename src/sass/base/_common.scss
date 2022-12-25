@@ -1,0 +1,80 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+body {
+  padding-top: 60px;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33;
+  color: $color-primary;
+
+  background-color: $color-primary-bg;
+
+  &.lock {
+    overflow: hidden;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 80px;
+
+    font-size: 18px;
+    line-height: 1.78;
+  }
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 16px;
+  padding-left: 16px;
+  max-width: $mobile;
+
+  @media screen and (min-width: $desktop) {
+    padding-right: 20px;
+    padding-left: 20px;
+    max-width: $desktop;
+  }
+}
+
+.section {
+  position: relative;
+
+  padding-top: 48px;
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 80px;
+  }
+}
+
+.anchor {
+  position: absolute;
+  top: -24px;
+
+  appearance: none;
+}
+
+.section__title {
+  position: relative;
+
+  margin-top: 0;
+  margin-bottom: 16px;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 32px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+  }
+}
