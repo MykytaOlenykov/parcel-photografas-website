@@ -10,10 +10,10 @@
   }
 }
 
-.gallery-container__img {
-  max-width: 342px;
+.gallery-list {
+  @extend %list;
 
-  @media screen and (min-width: $desktop) {
-    max-width: 1280px;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1280px;
 }
