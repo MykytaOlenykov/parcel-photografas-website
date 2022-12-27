@@ -15,5 +15,18 @@
 
   display: flex;
   flex-wrap: wrap;
-  max-width: 1280px;
+  max-width: 342px;
+
+  @media screen and (min-width: $desktop) {
+    max-width: 1280px;
+  }
+}
+
+.gallery-list__link {
+  display: block;
+  max-width: 114px;
+
+  @media screen and (min-width: $desktop) {
+    max-width: 160px;
+  }
 }
